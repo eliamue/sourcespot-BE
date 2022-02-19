@@ -1,8 +1,8 @@
 {
-  "name": "sourcespot-BE",
+  "name": "sourcespot-be",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
+  "module": "main.js",
   "type": "module",
   "scripts": {
     "test": "jest --verbose --runInBand --testLocationInResults --setupFiles dotenv/config",
@@ -35,7 +35,20 @@
     "cors": "^2.8.5",
     "cross-env": "^7.0.3",
     "dotenv": "^16.0.0",
+    "esm": "^3.2.25",
     "express": "^4.17.3",
     "pg": "^8.7.3"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliamue/sourcespot-BE.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eliamue/sourcespot-BE/issues"
+  },
+  "homepage": "https://github.com/eliamue/sourcespot-BE#readme",
+  "description": ""
 }
