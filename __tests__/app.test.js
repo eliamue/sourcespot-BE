@@ -44,7 +44,7 @@ describe('sourcespot-BE routes', () => {
   });
 
   it('gets all resources', async () => {
-    const resource1 = await Resources.createResource({
+    const resource1 = await Resources.insert({
       title: 'Dark Reader',
       category: 'Accessibility',
       about:
@@ -66,7 +66,7 @@ describe('sourcespot-BE routes', () => {
       ],
     });
 
-    const resource2 = await Resources.createResource({
+    const resource2 = await Resources.insert({
       title: 'f.lux',
       category: 'Accessibility',
       about:
@@ -90,7 +90,7 @@ describe('sourcespot-BE routes', () => {
       ],
     });
 
-    const resource3 = await Resources.createResource({
+    const resource3 = await Resources.insert({
       title: 'Brain Trauma Foundation',
       category: 'Education',
       about:
@@ -101,7 +101,7 @@ describe('sourcespot-BE routes', () => {
       tags: ['peer-reviewed', 'articles', 'scholarly', 'study', 'teaching'],
     });
 
-    const resource4 = await Resources.createResource({
+    const resource4 = await Resources.insert({
       title: 'Hennepin Health Traumatic Brain Injury Center',
       category: 'Services',
       about:
@@ -129,7 +129,7 @@ describe('sourcespot-BE routes', () => {
   });
 
   it('gets one resource by id', async () => {
-    const resource = await Resources.createResource({
+    const resource = await Resources.insert({
       title: 'f.lux',
       category: 'Accessibility',
       about:
@@ -159,7 +159,7 @@ describe('sourcespot-BE routes', () => {
   });
 
   it('updates a resource', async () => {
-    const resource = await Resources.createResource({
+    const resource = await Resources.insert({
       title: 'Brain Injury Alliance',
       category: 'Advocacy',
       about:
@@ -195,7 +195,7 @@ describe('sourcespot-BE routes', () => {
   });
 
   it('deletes a specific existing resource', async () => {
-    const resource = await Resources.createResource({
+    const resource = await Resources.insert({
       title: 'f.lux',
       category: 'Accessibility',
       about:
