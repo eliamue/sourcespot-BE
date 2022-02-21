@@ -20,7 +20,7 @@ describe('sourcespot-BE routes', () => {
         'Eye-care browser extension to switch any website into dark mode with full customizability.',
       website: 'https://darkreader.org/',
       logo: 'https://repository-images.githubusercontent.com/26682105/4d22e080-070e-11eb-8930-c69a17260e45',
-      located: '',
+      located: [],
       tags: [
         'photophobia',
         'eye-care',
@@ -51,7 +51,7 @@ describe('sourcespot-BE routes', () => {
         'Eye-care browser extension to switch any website into dark mode with full customizability.',
       website: 'https://darkreader.org/',
       logo: 'https://repository-images.githubusercontent.com/26682105/4d22e080-070e-11eb-8930-c69a17260e45',
-      located: '',
+      located: [],
       tags: [
         'photophobia',
         'eye-care',
@@ -73,7 +73,7 @@ describe('sourcespot-BE routes', () => {
         'Eye-care software that adapts the color of your computer display.',
       website: 'https://justgetflux.com/',
       logo: 'https://tamezatu.com/wp-content/uploads/2015/05/flux.png',
-      located: '',
+      located: [],
       tags: [
         'photophobia',
         'eye-care',
@@ -97,7 +97,7 @@ describe('sourcespot-BE routes', () => {
         'Develops evidence-based guidelines, research partnerships, & educational outreach.',
       website: 'http://www.braintrauma.org/',
       logo: 'https://med.stanford.edu/braincenter/research/_jcr_content/main/panel_builder/panel_1/panel_builder/panel_0/feature_box.img.620.high.png/neurosurgery_concussion_BTF.png',
-      located: '',
+      located: [],
       tags: ['peer-reviewed', 'articles', 'scholarly', 'study', 'teaching'],
     });
 
@@ -109,7 +109,7 @@ describe('sourcespot-BE routes', () => {
       website:
         'https://www.hennepinhealthcare.org/specialty/traumatic-brain-injury-center/',
       logo: 'https://hereforlife.blog/wp-content/uploads/2018/03/featured-hennepin-healthcare-promo.jpg',
-      located: '*MN only',
+      located: ['MN'],
       tags: [
         'Minnesota',
         'ER',
@@ -136,7 +136,7 @@ describe('sourcespot-BE routes', () => {
         'Eye-care software that adapts the color of your computer display.',
       website: 'https://justgetflux.com/',
       logo: 'https://tamezatu.com/wp-content/uploads/2015/05/flux.png',
-      located: '',
+      located: [],
       tags: [
         'photophobia',
         'eye-care',
@@ -166,7 +166,7 @@ describe('sourcespot-BE routes', () => {
         'Resource facilitation, education, outreach, events, & case management, plus state-specific chapters.',
       website: 'https://usbia.org/',
       logo: 'https://biacolorado.org/wp-content/uploads/2011/12/USBIA-Logo.jpg',
-      located: '',
+      located: [],
       tags: [
         'newsletter',
         'case manager',
@@ -183,14 +183,14 @@ describe('sourcespot-BE routes', () => {
         title: 'MN Brain Injury Alliance',
         website: 'https://www.braininjurymn.org/',
         logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQarrQg3SfqDlfnSQfliaolc8bbkjxJtH063GVjDESB4mCisUx9JdYPosoazFrR0JjYCV4&usqp=CAU',
-        located: '*MN only',
+        located: ['MN'],
       });
     expect(res.body).toEqual({
       ...resource,
       title: 'MN Brain Injury Alliance',
       website: 'https://www.braininjurymn.org/',
       logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQarrQg3SfqDlfnSQfliaolc8bbkjxJtH063GVjDESB4mCisUx9JdYPosoazFrR0JjYCV4&usqp=CAU',
-      located: '*MN only',
+      located: ['MN'],
     });
   });
 
@@ -202,7 +202,7 @@ describe('sourcespot-BE routes', () => {
         'Eye-care software that adapts the color of your computer display.',
       website: 'https://justgetflux.com/',
       logo: 'https://tamezatu.com/wp-content/uploads/2015/05/flux.png',
-      located: '',
+      located: [],
       tags: [
         'photophobia',
         'eye-care',

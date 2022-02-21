@@ -7,6 +7,6 @@ CREATE TABLE resources (
     about TEXT NOT NULL,
     website TEXT,
     logo TEXT,
-    located TEXT[],
+    located TEXT [],
     tags TEXT []
 );
